@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+         
+       
+      
+
+        input[type=text], input[type=password] {
+            align-content: center;
+            width: 20%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        button {
+            align-content: center;
+            background-color:blue;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 10%;
+        }
+
+            button:hover {
+                opacity: 0.8;
+            }
+
+
+
+        .container {
+            padding: 16px;
+        }
+    </style>
+</head>
+<body>
+    <br /><br /><br />
+    <center><h2>Login Form</h2></center>
+
+    @*<form action="SellerLogin" method="post">
+
+        <center>
+            <div class="container">
+                <label for="uname"><b>Username :</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+                <br />
+
+                <label for="psw"><b>Password :</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+                <br />
+                <button type="submit">Login</button>
+            </div>
+        </center>
+
+
+
+
+    </form>*@
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+</body>
+</html>

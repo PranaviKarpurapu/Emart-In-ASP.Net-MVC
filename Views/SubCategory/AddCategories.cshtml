@@ -1,0 +1,51 @@
+﻿@model Dmart.Models.SubCategories
+
+@{
+    ViewData["Title"] = "AddCategories";
+}
+
+<h1>AddCategories</h1>
+
+<h4>SubCategories</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="AddCategories" method="post">
+            <div class="form-group">
+                <label asp-for="CName" class="control-label"></label>
+                <input asp-for="CName" class="form-control" />
+                <span asp-validation-for="CName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CDetails" class="control-label"></label>
+                <input asp-for="CDetails" class="form-control" />
+                <span asp-validation-for="CDetails" class="text-danger"></span>
+            </div>
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Scid" class="control-label"></label>
+                <input asp-for="Scid" class="form-control" />
+                <span asp-validation-for="Scid" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Scname" class="control-label"></label>
+                <input asp-for="Scname" class="form-control" />
+                <span asp-validation-for="Scname" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Scdes" class="control-label"></label>
+                <input asp-for="Scdes" class="form-control" />
+                <span asp-validation-for="Scdes" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Add" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
